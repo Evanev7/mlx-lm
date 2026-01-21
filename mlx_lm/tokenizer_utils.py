@@ -454,6 +454,7 @@ def _is_bpe_decoder(decoder):
 
 
 def _infer_tool_parser(chat_template):
+    print(f"! ! ! ! ! ! {chat_template}")
     """Attempt to auto-infer a tool parser from the chat template."""
     if not isinstance(chat_template, str):
         return None
